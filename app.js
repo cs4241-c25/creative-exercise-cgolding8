@@ -17,6 +17,4 @@ app.get("/population.js", function(request, response) {
 });
 
 // listen for requests :)
-app.listen(port, () => {
-  console.log(`http://localhost:${port}`)
-})
+app.listen( process.env.PORT || port )
